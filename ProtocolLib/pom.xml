@@ -26,8 +26,8 @@
  
   <repositories>
     <repository>
-      <id>bukkit-rep</id>
-      <url>http://repo.bukkit.org/content/groups/public</url>
+        <id>yawkat</id>
+        <url>http://mvn.yawk.at/</url>
     </repository>
     <repository>
       <id>comphenix-releases</id>
@@ -230,9 +230,9 @@
   		<scope>compile</scope>
   	</dependency>
   	<dependency>
-  		<groupId>org.bukkit</groupId>
-  		<artifactId>craftbukkit</artifactId>
-  		<version>1.7.8-R0.1-SNAPSHOT</version>
+  		<groupId>org.spigotmc</groupId>
+  		<artifactId>spigot</artifactId>
+  		<version>1.7.10-R0.1-mirror-SNAPSHOT</version>
   		<scope>provided</scope>
   	</dependency>
   	<dependency>

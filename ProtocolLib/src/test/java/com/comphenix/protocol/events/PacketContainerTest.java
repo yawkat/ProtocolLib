@@ -22,15 +22,15 @@ import java.lang.reflect.Array;
 import java.util.List;
 import java.util.UUID;
 
-import net.minecraft.server.v1_7_R3.AttributeModifier;
-import net.minecraft.server.v1_7_R3.AttributeSnapshot;
-import net.minecraft.server.v1_7_R3.PacketPlayOutUpdateAttributes;
+import net.minecraft.server.v1_7_R4.AttributeModifier;
+import net.minecraft.server.v1_7_R4.AttributeSnapshot;
+import net.minecraft.server.v1_7_R4.PacketPlayOutUpdateAttributes;
 
 import org.apache.commons.lang.SerializationUtils;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 // Will have to be updated for every version though
-import org.bukkit.craftbukkit.v1_7_R3.inventory.CraftItemFactory;
+import org.bukkit.craftbukkit.v1_7_R4.inventory.CraftItemFactory;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

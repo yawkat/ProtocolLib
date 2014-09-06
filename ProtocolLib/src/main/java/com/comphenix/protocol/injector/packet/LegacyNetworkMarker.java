@@ -58,7 +58,7 @@ public class LegacyNetworkMarker extends NetworkMarker {
 		
 		// Combine them into a single stream
 		try {
-			return new DataInputStream(ByteStreams.join((InputSupplier) header, (InputSupplier) data).getInput());
+			return new DataInputStream((InputStream) ByteStreams.join((InputSupplier) header, (InputSupplier) data).getInput());
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot add header.", e);
 		}

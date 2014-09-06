@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.concurrent.ConcurrentMap;
 
-import net.minecraft.server.v1_7_R3.NBTTagCompound;
-import net.minecraft.server.v1_7_R3.TileEntityChest;
 import net.sf.cglib.asm.ClassReader;
 import net.sf.cglib.asm.MethodVisitor;
 import net.sf.cglib.asm.Opcodes;
@@ -55,8 +53,6 @@ class TileEntityAccessor<T extends BlockState> {
 	/**
 	 * Construct a new tile entity accessor.
 	 * @param tileEntityField - the tile entity field.
-	 * @param tileEntity - the tile entity.
-	 * @param tile - the block state.
 	 * @throws IOException Cannot read tile entity.
 	 */
 	private TileEntityAccessor(FieldAccessor tileEntityField, T state) {
@@ -87,7 +83,6 @@ class TileEntityAccessor<T extends BlockState> {
 	/**
 	 * Find the read/write methods in TileEntity.
 	 * @param tileEntityClass - the tile entity class.
-	 * @param nbtCompoundClass - the compound clas.
 	 * @throws IOException If we cannot find these methods.
 	 */
 	private void findMethodsUsingASM(final Class<?> tileEntityClass) throws IOException {
